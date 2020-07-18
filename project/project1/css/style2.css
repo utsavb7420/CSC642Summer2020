@@ -1,0 +1,111 @@
+body {
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+}
+
+#map {
+     height: 500px;
+     width:1270px;
+     margin-left: -10%;
+}
+
+.nav{
+     background-color: #6c5ce7;
+     padding: 20px 50px;
+     color: white;
+}
+.nav a{
+     margin-left: 78%;
+     color: black;
+     margin-top: -4%;
+     background-color: white;
+}
+.info{
+     padding: 5% 6%;
+}
+#status{
+     position: absolute;
+     left: 45%;
+     top: 20%;
+     font-size: 18px;
+}
+
+@media screen and (min-width: 768px) and (max-width:990px){
+     .info{
+          padding: 5% 0%;
+     }
+     #map {
+          margin-left: -8% ;
+          height: 400px;
+          width: 870px;
+     }
+
+     .nav{
+          padding: 28px 40px;
+     }
+     .nav a{
+          margin-left: 78%;
+          margin-top: -5%;
+     }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px){
+     .info{
+          padding: 5% 0%;
+     }
+     #map {
+          margin-top: 20px;
+          margin-left: -10% ;
+          height: 400px;
+          width: 675px;
+     }
+
+     .nav{
+          padding: 25px 40px;
+     }
+     .nav h4{
+          font-size: 22px;
+     }
+     .nav a{
+          margin-left: 70%;
+          margin-top: -7%;
+          font-size: 16px;
+     }
+     #status{
+          position: absolute;
+          left: 43%;
+          top: 20%;
+          font-size: 18px;
+     }
+}
+
+/* small screens less than 600px*/
+@media only screen and (max-width: 600px){
+     .info{
+          padding: 5%;
+     }
+     #map {
+          margin-left: -10%;
+          height: 400px;
+          width: 583px;
+     }
+
+     .nav{
+          padding: 20px 30px
+     }
+     .nav h4{
+          font-size: 20px;
+     }
+     .nav a{
+          margin-left: 64%;
+          margin-top: -7%;
+          font-size: 16px;
+     }
+     #status{
+          position: absolute;
+          left: 43%;
+          top: 20%;
+          font-size: 18px;
+     }
+}

@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(to bottom, rgba(99, 99, 102, 0.637), rgba(58, 58, 58, 0.699)),url('../images/form.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.survey-form{
+    background-color: white;
+    padding: 5% 8%;
+    margin: 10% 15%;
+}
+.survey-form h4{
+    text-align: center;
+    padding-bottom: 3%;
+    color: #6c5ce7;
+}
+.required{
+    color: red;
+    font-size: 22px;
+}
+.form-control:focus{
+    border-color: #6c5ce7;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #6c5ce7;
+}
+#txtCaptcha {
+    background: url('../images/captcha-background.jpg') no-repeat center ;
+    background-size: cover;
+    font-family: 'Special Elite', cursive;
+    font-size: 30px;
+    width: 33%;
+    padding: 2% 3%;
+    color: black;
+}
+#reload-captcha{
+    font-size: 22px;
+    margin-top: 10px
+}
+.submit-btn{
+    background-color:#6c5ce7;
+    color: white;
+
+}
+.submit-btn:hover{
+    background-color:#6c5ce7c9;
+    color: white;
+}
+.error{
+    color: red;
+    font-size: 14px;
+    padding-left: 3px;
+}
+.alert{
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    position: absolute;
+    top: 215%;
+    display: none;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width:990px){
+    .survey-form{
+        background-color: white;
+        padding: 5% 8%;
+        margin: 8% 5%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) and (max-width: 767px){
+    .survey-form{
+        padding: 5% 10%;
+        margin: 12% 3%;
+    }
+    .survey-form h4{
+        padding-bottom: 5%;
+    }
+    .required{
+        font-size: 20px;
+    }
+    #txtCaptcha {
+        font-size: 25px;
+        width: 37%;
+        padding: 4% 6%;
+    }
+    #reload-captcha{
+        font-size: 20px;
+    }
+    .alert{
+        margin-left: 15%;
+        top: 235%;
+    }
+    #dob,
+    #education,
+    #phone{
+        width: 100% !important;
+    }
+    #feet,
+    #inches,
+    #zipcode{
+        width: 50%;
+    }
+    .submit-btn{
+        width: 100%;
+    }
+}
+
+/* small screens less than 600px*/
+@media only screen and (max-width: 600px){
+    .survey-form{
+        padding: 7% 12%;
+        margin: 12% 7%;
+    }
+
+    #txtCaptcha {
+        font-size: 25px;
+        width: 40%;
+        padding: 4%
+    }
+    #reload-captcha{
+        font-size: 20px;
+    }
+    .alert{
+        margin-left: 12%;
+        top: 240%;
+        width: 76%;
+    }
+    #dob,
+    #education,
+    #phone{
+        width: 100% !important;
+    }
+    #feet,
+    #inches,
+    #zipcode{
+        width: 60%;
+    }
+    .submit-btn{
+        width: 100%;
+    }
+}
+
+
